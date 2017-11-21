@@ -1,0 +1,14 @@
+html
+  body
+    form(action="/charge", method="post")
+      article
+        label pay
+      script(
+        src="//checkout.stripe.com/v2/checkout.js",
+        class="stripe-button",
+        data-key=pKey,
+        data-locale="auto",
+        data-description="Sample Charge",
+        data-amount="999"
+        data-zip-code="true"
+        data-currency="gbp")
